@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Will You Be My Girlfriend? 💗</title>
+  <title>For My Baby ❤️</title>
 
   <style>
     body {
@@ -25,7 +25,21 @@
       padding: 35px 25px;
       border-radius: 25px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      position: relative;
+    }
+
+    .heart {
+      font-size: 55px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
     }
 
     h1 {
@@ -37,16 +51,6 @@
       color: #555;
       font-size: 17px;
       line-height: 1.6;
-    }
-
-    .heart {
-      font-size: 55px;
-      animation: beat 1s infinite;
-    }
-
-    @keyframes beat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
     }
 
     button {
@@ -77,7 +81,6 @@
       margin-top: 20px;
     }
 
-    /* Sad pink animation */
     #sadFace {
       display: none;
       font-size: 45px;
@@ -87,17 +90,17 @@
 
     @keyframes sad {
       0% {
-        transform: scale(0.5) translateY(-10px);
+        transform: scale(0.5);
         opacity: 0;
       }
 
       50% {
-        transform: scale(1.2) translateY(5px);
+        transform: scale(1.2);
         opacity: 1;
       }
 
       100% {
-        transform: scale(1) translateY(0);
+        transform: scale(1);
         opacity: 1;
       }
     }
@@ -113,15 +116,20 @@
     <h1>Hey baby...</h1>
 
     <p>
-      I've been meaning to ask you something...
-      and honestly, I don't think I can keep it to myself anymore 😭
+      I know we're already together...
+      but there's something I've been thinking about. 🥹
     </p>
 
     <p>
-      You make me smile in ways you probably don't even realize.
-      I love having you in my life, and I want to make this something
-      even more special. 🥹❤️
+      We kinda just became a thing without me ever properly asking you
+      to be my girlfriend 😭
     </p>
+
+    <p>
+      And honestly, you deserve to be asked properly. ❤️
+    </p>
+
+    <h1>So baby...</h1>
 
     <h1>Will you officially be my girlfriend? 💗</h1>
 
@@ -146,12 +154,11 @@
     }
 
     function moveNo() {
-      const sadFace = document.getElementById("sadFace");
       const button = document.getElementById("no");
+      const sadFace = document.getElementById("sadFace");
 
       sadFace.style.display = "block";
 
-      /* Restart the sad animation every time */
       sadFace.style.animation = "none";
       sadFace.offsetHeight;
       sadFace.style.animation = "sad 0.6s ease";
@@ -159,9 +166,15 @@
       const x = Math.random() * 200 - 100;
       const y = Math.random() * 200 - 100;
 
-      button.style.transform = translate(${x}px, ${y}px);
+      button.style.transform = `translate(${x}px, ${y}px)`;
     }
   </script>
 
 </body>
 </html>
+
+
+    
+
+
+
